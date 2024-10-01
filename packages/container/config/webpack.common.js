@@ -1,4 +1,11 @@
+const HTMLWelpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
+  plugins: [
+    new HTMLWelpackPlugin({
+      template: "./public/index.html",
+    }),
+  ],
   module: {
     rules: [
       {
